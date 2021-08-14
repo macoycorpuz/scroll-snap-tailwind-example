@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .scroll-snap-y {
+    scroll-snap-type: y mandatory;
+  }
+  .scroll-snap-x {
+    scroll-snap-type: x mandatory;
+  }
+  .scroll-snap-start {
+    scroll-snap-align: start;
+  }
+}
+
+#root {
+  @apply h-screen w-screen;
+}
